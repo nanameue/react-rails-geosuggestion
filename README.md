@@ -11,3 +11,5 @@ This is a modified version of [react-geosuggest](https://github.com/ubilabs/reac
 Please kindly refer to the sample on [the original live demo](http://ubilabs.github.io/react-geosuggest/)
 
 Thank @ubilabs for a nice start on this lib.
+
+PS. The component were rewritten to match our own coding style and environment. It may not work instantly once you grab it, you may need to adjust some files as well. :)
