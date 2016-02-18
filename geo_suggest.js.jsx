@@ -4,12 +4,6 @@ function escapeRegExp(str) {
   return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
 }
 
-/**
- * Entry point for the Geosuggest component
- */
-
-var blog = bows('GeoSuggest');
-
 var GeoSuggest = React.createClass({
 
   getDefaultProps: function() {

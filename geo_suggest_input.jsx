@@ -1,4 +1,3 @@
-var alog = bows('GeoSuggestInput');
 var GeoSuggestInput = React.createClass({
 
   getDefaultProps: function() {
@@ -66,8 +65,6 @@ var GeoSuggestInput = React.createClass({
    * @return {Function} The React element to render
    */
   render: function() {
-    // const attributes = filterInputAttributes(this.props),
-    // alog('[render]', this.props);
     var attributes = this.props;
     var classes = classNames(
       'geosuggest__input',
