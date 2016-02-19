@@ -148,7 +148,6 @@ var GeoSuggest = React.createClass({
    * Search for new suggests
    */
   searchSuggests: function() {
-    blog('[searchSuggests]');
     var that = this;
     if (!this.state.userInput) {
       this.updateSuggests();
@@ -174,7 +173,6 @@ var GeoSuggest = React.createClass({
     this.autocompleteService.getPlacePredictions(
       options,
       function(suggestsGoogle) {
-        blog('[searchSuggests] - getPlacePredictions');
         that.updateSuggests(suggestsGoogle || []); // can be null
 
         if (that.props.autoActivateFirstSuggest) {
@@ -220,7 +218,6 @@ var GeoSuggest = React.createClass({
    * Show the suggestions
    */
   showSuggests: function() {
-    blog('[showSuggests]');
     this.searchSuggests();
     this.setState({isSuggestsHidden: false});
   },
@@ -279,7 +276,6 @@ var GeoSuggest = React.createClass({
         label: this.state.userInput
       };
     }
-    blog('[selectSuggests]');
     this.setState({
       isSuggestsHidden: true,
       userInput: suggest.label
@@ -336,7 +332,6 @@ var GeoSuggest = React.createClass({
     );
 
     var that = this;
-    blog('[render]', this.state);
 
     return (
       <div className={classes}>

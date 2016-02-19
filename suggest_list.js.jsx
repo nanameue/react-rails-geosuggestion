@@ -1,5 +1,3 @@
-var clog = bows('SuggestList');
-
 var GeoSuggestList = React.createClass({
   getDefaultProps: function() {
     return {
